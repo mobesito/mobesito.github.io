@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Edwin Cornejo</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: monogram;
+        src: url(monogram.ttf);
+      }
+      body {
+        font-family: monogram, monospace;
+        font-size: 2rem;
+        overflow: hidden;
+      }
+      #app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      #textbox {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        bottom: 2vh;
+        min-height: 10vh;
+        background: white;
+        border-radius: 3px;
+        outline-style: solid;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        word-spacing: 0.2rem;
+        filter: drop-shadow(0 0 0.75rem rgb(112, 112, 112));
+      }
+      .iu-texto {
+        margin: 0;
+        user-select: none; /* para que no pueda seleccionar el texto del dialogo */
+      }
+      .iu-cerrar-btn {
+        font-family: inherit;
+        border-style: none;
+        border-radius: 3px;
+        padding: 1rem;
+        font-size: inherit;
+      }
+      .contenedor-btn {
+        align-self: flex-end;
+        margin-top: 1rem;
+      }
+      .nota {
+        position: absolute;
+        left: 5%;
+        top: 1vh;
+        display: flex;
+        flex-direction: column;
+        color: rgb(238, 238, 238);
+        user-select: none;
+      }
+    </style>
+    <div id="app">
+      <div id="iu">
+        <p class="nota">Haz Tap/Clic derecho para moverte</p>
+        <div id="contenedor-textbox" style="display: none;">
+          <div id="textbox">
+            <p id="dialogo" class="iu-texto"></p>
+            <div class="contenedor-btn">
+              <button id="cerrar" class="iu-cerrar-btn">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="juego" tabindex="1"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
