@@ -8,7 +8,7 @@ export const dataDialogos = {
   "sofa-table": `Este es mi sofá, aquí me siento a ver series de Netflix o algo en Youtube para despejar mi mente`,
   tv: `Esta es mi TV, en ella he visto buenas peliculas, como Inglorious Basterds, Taxi Driver o Lalaland, también series como Breaking Bad, Game of Thrones o Vikings!`,
   bed: `En mi cama recupero energias por la noche, no soy mucho de siestas.`,
-  resume: `Este es mi escritorio, en el esta mi CV. <a href="https://github.com/JSLegendDev/Resume/blob/main/JSLegend%20Resume-1.pdf" target="_blank">echale un ojo?</a>
+  resume: `Este es mi escritorio, en el esta mi CV. <a href="https://github.com/mobesito/files/blob/main/CV_Edwin%20Cornejo-1.pdf" target="_blank">echale un ojo?</a>
   Me puedes contactar a mi correo edwin54.ayala@gmail.com si tienes alguna oferta interesante!`,
   projects: `Informacion sobre este portafolio : Esta hecho con la libraria Kaboom.js, que sirve precisamente para hacer videojuegos con JavaScript.
   El texto es renderizado con HTML/CSS. Para realizar este portafolio segui las indicaciones del siguiente
