@@ -151,7 +151,7 @@ k.scene("principal", async () => {
   });
 
   k.onMouseDown((btnMouse) => { // configuramos movimiento con el mouse...
-    if (btnMouse !== "right" || personaje.estaEnDialogo) return;
+    if (btnMouse !== "left" || personaje.estaEnDialogo) return;
     const posicionMouseMundo = k.toWorld(k.mousePos());
     personaje.moveTo(posicionMouseMundo, personaje.velocidad);
 
